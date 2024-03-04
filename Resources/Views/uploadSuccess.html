@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Files</title>
+</head>
+<body>
+    <h1>Available Audio Files</h1>
+    <ul>
+        {{audioList}}
+    </ul>
+    <form action="/process" method="post">
+        <div>
+            <label for="enable_speaker_diarizations">Enable Speaker Diarizations (true or false, comma-separated):</label>
+            <input type="text" id="enable_speaker_diarizations" name="enable_speaker_diarizations">
+        </div>
+        <div>
+            <label for="diarization_speaker_counts">Diarization Speaker Counts (comma-separated):</label>
+            <input type="text" id="diarization_speaker_counts" name="diarization_speaker_counts">
+        </div>
+        <div>
+            <label for="language_codes">Language Codes (comma-separated):</label>
+            <input type="text" id="language_codes" name="language_codes">
+        </div>
+        <div>
+            <input type="submit" value="Submit Configuration">
+        </div>
+    </form>
+</body>
+</html>

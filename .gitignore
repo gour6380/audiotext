@@ -10,3 +10,7 @@ db.sqlite
 .env.*
 ! .env.example
 .vscode
+__pycache__
+AudiotoText.egg-info
+Tests
+Public
